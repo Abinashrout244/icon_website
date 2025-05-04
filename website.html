@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="./website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body class="bg-white dark:bg-gray-900" >
+
+    <!-- header start.... -->
+    <nav class=" flex justify-between text-center p-3 bg-white fixed top-0 left-0 right-0 z-30 shadow-lg shadow-black/60" >
+        <a href="#" id="logo"  class="flex gap-2 items-center ">
+           <img src="../public/images/web" class="size-12" id="image" alt="web-logo">
+           <span class="text-lg font-semibold">WebImages</span>
+        </a>
+
+        <div class="nav-menu hidden lg:flex  gap-12 p-3 ">
+            <a href="#container-title" class="font-medium hover:text-pink-500" >Icons</a>
+            <a href="#step" class="font-medium hover:text-pink-500" >Steps</a>
+            <a href="#grid" class="font-medium hover:text-pink-500" >Desktop</a>
+            <a href="#customer" class="font-medium hover:text-pink-500" >Stories</a>
+            <a href="#need-section" class="font-medium hover:text-pink-500" >Needs</a>
+            <a href="#questions" class="font-medium hover:text-pink-500" >Faq's?</a>
+        </div>
+        <button id="theme-toggle" class="text-2xl bg-white rounded-full  text-black    ">
+            <i id="theme-icon" class="bi bi-brightness-high"></i>
+          </button>
+        <button class="hidden lg:flex p-3 border border-solid border-black gap-2 items-center rounded-lg hover:bg-gradient-to-r from-pink-500 to-cyan-500">
+   
+        <img src="../public/images/btnlogo1" class="size-4">
+       <span> Iamge Developer</span>
+        <span class="bi bi-arrow-right font-semibold"> </span>
+     
+        </button>
+      
+        
+        <button onclick="ShowClick() " class="p-2 md:hidden">
+           <i class="fa-solid fa-bars text-gray-600 font-semibold text-xl"></i>
+        </button>
+
+
+
+
+         <div class=" hidden fixed inset-0 bg-white p-3 w-screen z-10 md:hidden" id="nav-dialogue">
+                    <div id="nav-bar" class="flex justify-between">
+                        <a href="#" id="logo"  class="flex gap-2 items-center ">
+                            <img src="../public/images/web" class="size-12" >
+                            <span class="text-lg font-semibold">WebImages</span>
+                         </a>
+                            
+                         <button class="p-2 md:hidden" onclick="ShowClick() " >
+                            <i class="bi bi-x text-gray-600 font-semibold text-xl"></i>
+                         </button>
+                    </div>
+                    
+                    <div class="mt-6  flex flex-col   border border-b-gray-400">
+                  
+                        <a href="#hero" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3 rounded-lg " >Icons</a>
+                        <a href="#step" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3  rounded-lg " >Steps</a>
+                        <a href="#grid" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3 pl-3  rounded-lg " >Desktop</a>
+                        <a href="#customer" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3  rounded-lg " >Stories</a>
+                        <a href="#need-section" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3  rounded-lg" >Needs</a>
+                        <a href="#questions" class="font-medium  hover:bg-gradient-to-r from-pink-500 to-cyan-500 m-3 p-3  rounded-lg" >Faq's?</a>
+                
+                    
+                    </div>
+                    <button id="theme-toggle" class="text-2xl bg-white rounded-full  text-black    ">
+                        <i id="theme-icon" class="bi bi-brightness-high"></i>
+                      </button>
+                    <button class="  mt-6 flex p-3  gap-2 items-center rounded-lg hover:bg-gradient-to-r from-pink-500 to-cyan-500">
+   
+                        <img src="../public/images/btnlogo1" class="size-4">
+                       <span> Iamge Developer</span>
+                        <span class="bi bi-arrow-right font-semibold"> </span>
+                     
+                    </button>
+
+
+
+
+        </div> 
+    </nav> 
+        <!-- main start... -->
+
+   <main class="mt-[75px] dark:bg-gray-900 ">
+           
+
+
+            <div id="hero" class="  bg-gradient-to-b from-pink-200 via-cyan-200 to-transparent dark:bg-gradient-to-b dark:from-pink-200 dark:via-cyan-200  ">
+                        <div id="hero-container" class="max-w-4xl px-6 pb-36 flex flex-col mx-auto pt-28 sm:items-center">
+                                    <div id="version-text" class="flex gap-2 items-center  intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-rotate-in-180 bg-yellow-100 border-2 px-2 border-solid  border-yellow-600 rounded-lg w-fit shadow-md shadow-gray-500 hover:shadow-lg hover:shadow-gray-500 hover:-translate-y-1 transition group">
+                                        <span class="bi bi-dot text-3xl text-yellow-300"></span>
+                                        <p class=" text-yellow-300 font-semibold intersect:motion-preset-slide-up motion-delay-0">V0.0.2 <span class="text-black">Find Your Version</span></p>
+                                        <span class="bi bi-arrow-right-short font-semibold group-hover:translate-x-1 transition"></span>
+                                    </div>
+
+                                    <div class="sm:flex gap-6 mt-12 hidden items-center my-6 " data-aos="zoom-in" data-aos-duration="800">
+                                     <p class="font-semibold text-lg"><span class="bi bi-graph-up-arrow mr-1"></span>Code Optional</p>
+                                     <p class="font-semibold text-lg"><span class="bi bi-hand-index-thumb mr-1"></span>Drag & Drop Builder</p>
+                                     <p class="font-semibold text-lg"><span class="bi bi-display mr-1"></span>Windows,Linux, MAC OS</p>
+                                    </div>
+                                   
+                                        <h2 class="font-semibold text-4xl sm:text-6xl mt-12 sm:text-center intersect:motion-preset-slide-up motion-delay-200">Web image to Desktop Image</h2>
+                                        <p class="text-xl sm:2xl mt-10 sm:text-center intersect:motion-preset-slide-up motion-delay-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam laudantium quisquam vitae maiores at repellat doloremque obcaecati cum debitis rerum!</p>
+            
+                                    
+            
+                                    <div class="mt-20 flex flex-col sm:flex-row gap-2 intersect:motion-preset-slide-up motion-delay-300">
+                                        <button class=" motion-preset-bounce -motion-translate-y-in-150 text-white rounded-lg bg-blue-500 font-semibold shadow-lg shadow-gray-500 p-2 hover:bg-opacity-90">Download now</button>
+                                        <button class=" motion-preset-bounce -motion-translate-y-in-150 rounded-lg bg-white/50 font-semibold shadow-lg shadow-gray-500 p-2 hover:bg-black/10">Read Docs</button>
+                                    </div>
+
+
+                        </div>
+
+          
+        </div>
+<!-- 
+        ____________________lines group_______________ -->
+
+        <div id="container-title" class="flex flex-col gap-8 px-6 pt-[85px] pb-12 max-w-7xl mt-16 mx-auto lg:px-8 bg-white dark:bg-gray-900 dark:text-white ">
+            <div class="container-add flex items-center justify-center font-semibold mt-10">
+                <img src="../public/images/btnlogo1" class="size-6 mr-2" >
+                <p class="mr-2 "  >Go down And see some Example of Logo Images.</p>
+                <span class="bi bi-arrow-down-short text-2xl"></span>
+            </div>
+        
+
+        <div   id="lines-group" class="flex flex-col gap-4  pt-10 ">
+            <div id="line-1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                    <p>Messenger</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+                </div>
+           
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                        <p>Home</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                        <p>Messenger</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                        <p>Home</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                        <p>Messenger</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+                </div>
+           
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                            <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                            <p>Home</p>
+                </div>
+                 <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                            <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                            <p>Messenger</p>
+                </div>
+                 <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                            <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                            <p>Home</p>
+                </div>
+                <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                    <p>Home</p>
+            </div>
+            <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                    <p>Messenger</p>
+            </div>
+       
+            <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                        <p>Home</p>
+            </div>
+             <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-messenger text-4xl md:text-5xl"></span>
+                        <p>Messenger</p>
+            </div>
+             <div class="border border-gray-500  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                        <span class="bi bi-house-exclamation-fill text-4xl md:text-5xl"></span>
+                        <p>Home</p>
+            </div>
+        
+            
+        
+                
+            </div>
+            <div id="line-2"  class="flex md:hidden gap-4 w-screen  -translate-x-36 transition-transform ease-linear">
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                   <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                
+
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+                <div class="border border-gray-600  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-github text-4xl md:text-5xl"></span>
+                    <p>Github</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50 ">
+                    <span class="bi bi-linkedin text-4xl md:text-5xl"></span>
+                    <p >Linked IN</p>
+                </div>
+            
+            </div>
+            <div id="line-3"  class="flex gap-4  w-screen -translate-x-48 transition-transform ease-linear">
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+                <div class="border border-gray-600  text-center flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-amazon text-4xl md:text-5xl"></span>
+                    <p>Amazon</p>
+                </div>
+                <div  class="border border-gray-600  text-center  flex flex-col justify-center items-center min-w-24 min-h-24 rounded-lg bg-white/50">
+                    <span class="bi bi-apple text-4xl md:text-5xl"></span>
+                    <p>Apple</p>
+                </div>
+            </div>
+      </div> 
+
+
+
+
+</div> 
+
+
+             <!-- steps........ -->
+
+         <div class="bg-white dark:bg-gray-900 dark:text-white   " id="step">
+            <div id="steps" class=" flex flex-col gap-6 px-6 pt-[85px] pb-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-14 ">
+
+                <h2 class="text-5xl sm:font-semibold motion-preset-typewriter-[6]">How it Works?</h2>
+
+                      <div  data-aos="fade-right" data-aos-delay="100"  id="step-1" class="bg-gray-50 dark:bg-gray-800      dark:text-white rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-10 shadow-lg  shadow-gray-500/50">
+                           <div class="flex flex-col gap-6 dark:text-gray-300" data-aos="fade-right" data-aos-delay="200" >
+                                    <span class=" motion-preset-seesaw border border-yellow-300 bg-yellow-200 text-yellow-500 px-3 py-1 w-fit rounded-lg">Step 1</span>
+
+                                    <h2 class="font-semibold text-4xl dark:text-white">Bootstrap Icon from your WebPage</h2>
+
+                                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa, voluptate dolorum voluptatibus, laudantium nisi nesciunt minima incidunt tenetur eveniet quos, beatae illum ducimus provident facere.</p>
+                                        
+                                    <div class="flex gap-4 md:gap-x-40">
+                                        <div>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short ">Multiple Windows</span></p>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                            <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                        </div>
+                                    </div>
+                           </div>
+                           <div class="border border-gray-200 p-5 rounded-lg shadow-inner shadow-black/50 mt-5">
+                     
+                              <img src="../public/images/webback"  class="lg:size-full size-96" alt="web-image">
+                             
+                           </div>
+                     </div>
+                     <div   data-aos="fade-right" data-aos-delay="100"  id="step-2" class="bg-gray-50 dark:bg-gray-800      dark:text-white rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-10 shadow-lg  shadow-gray-500/50">
+                        <div class="flex flex-col gap-6 dark:text-gray-300" data-aos="fade-right" data-aos-delay="200">
+                                 <span class="  motion-preset-seesaw border border-yellow-300 bg-yellow-200 text-yellow-500 px-3 py-1 w-fit rounded-lg">Step 2</span>
+
+                                 <h2 class="font-semibold text-4xl dark:text-white">Bootstrap Icon from your WebPage</h2>
+
+                                 <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa, voluptate dolorum voluptatibus, laudantium nisi nesciunt minima incidunt tenetur eveniet quos, beatae illum ducimus provident facere.</p>
+                                     
+                                 <div class="flex gap-4 md:gap-x-40">
+                                     <div>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short ">Multiple Windows</span></p>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                     </div>
+                                     <div>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                         <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                     </div>
+                                 </div>
+                        </div>
+                        <div class="border border-gray-200 p-5 rounded-lg shadow-inner shadow-black/50 mt-5">
+                  
+                           <img src="../public/images/webback"  class="lg:size-full size-96" alt="web-image">
+                          
+                        </div>
+                  </div>
+                  <div      data-aos="fade-right" data-aos-delay="100" id="step-3"  class="bg-gray-50 dark:bg-gray-800     dark:text-white rounded-xl border px-8 py-12 flex flex-col lg:flex-row mt-10 shadow-lg  shadow-gray-500/50">
+                    <div class="flex flex-col gap-6 dark:text-gray-300" data-aos="fade-right" data-aos-delay="200">
+                             <span class="border motion-preset-seesaw border-yellow-300 bg-yellow-200 text-yellow-500 px-3 py-1 w-fit rounded-lg">Step 3</span>
+
+                             <h2 class="font-semibold text-4xl dark:text-white">Bootstrap Icon from your WebPage</h2>
+
+                             <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsa, voluptate dolorum voluptatibus, laudantium nisi nesciunt minima incidunt tenetur eveniet quos, beatae illum ducimus provident facere.</p>
+                                 
+                             <div class="flex gap-4 md:gap-x-40">
+                                 <div>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short ">Multiple Windows</span></p>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                 </div>
+                                 <div>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                     <p class="mb-3 mr-2"><span class="bi bi-arrow-right-short">Multiple Windows</span></p>
+                                 </div>
+                             </div>
+                    </div>
+                    <div class="border border-gray-200 p-5 rounded-lg shadow-inner shadow-black/50 mt-5">
+              
+                       <img src="../public/images/webback"  class="lg:size-full size-96" alt="web-image">
+                      
+                    </div>
+              </div>
+
+        </div> 
+
+           </div>
+
+            <!-- gridsss..... -->
+                 <div class="bg-white dark:bg-gray-900 dark:text-white " id="grid">
+
+                    <div id="bent-grid" class="px-6 pt-[85px] pb-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-14 ">
+                        <h2 class="text-5xl  sm:font-semibold mb-14 motion-preset-typewriter-[10] font-sans ">To Desktop Details</h2>
+                        <div id="grid-container"  class="flex flex-col gap-6 lg:grid lg:grid-cols-3  motion-preset-bounce motion-duration-300" style="grid-auto-rows: 110px;">
+                                   
+  
+                           <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="800" class=" motion-preset-bounce motion-duration-300 row-start-1 row-end-3 rounded-2xl border-2 border-slate-200   hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px] ">
+                              <div class="rounded-2xl bg-white dark:bg-gray-800 dark:text-gray-400   hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl dark:text-white">Native Notifications</h2>
+                                        <img src="../public/images/notification " class="size-48 rounded-xl " >
+                              </div>
+                          </div>
+                          <div data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000" class="motion-preset-bounce motion-duration-300  row-start-1 row-end-4 rounded-2xl   border-2 border-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                              <div class="rounded-2xl bg-white dark:bg-gray-800 dark:text-gray-400  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl justify-start mb-2 dark:text-white">Auto Updates</h2>
+                                        <p class="text-center text-lg mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident fuga quae! Fugit quibusdam consequuntur eos eaque, quaerat cumque explicabo.</p>
+  
+                                        <img src="../public/images/update.jpg " class="size-40 rounded-xl " >
+                              </div>
+                          </div>
+                          <div data-aos="fade-down" data-aos-delay="100"  data-aos-duration="1000" class=" motion-preset-bounce motion-duration-300 row-start-1 row-end-3 rounded-2xl   border-2 border-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                              <div class="rounded-2xl dark:bg-gray-800 dark:text-gray-400 bg-white  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl dark:text-white">Native Notifications</h2>
+                                        <img src="../public/images/notification " class="size-48 rounded-xl " >
+                              </div>
+                          </div>
+                          <div data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000" class=" motion-preset-bounce motion-duration-300 row-start-3 row-end-6 rounded-2xl bg  border-2 border-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                              <div class="rounded-2xl dark:bg-gray-800 dark:text-gray-400 bg-white  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl dark:text-white justify-start mb-2">Auto Updates</h2>
+                                        <p class="text-center text-lg mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident fuga quae! Fugit quibusdam consequuntur eos eaque, quaerat cumque explicabo.</p>
+  
+                                        <img src="../public/images/update.jpg " class="size-40 rounded-xl " >
+                              </div>
+                          </div>
+                          <div data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000" class= "  motion-preset-bounce motion-duration-300 row-start-4 row-end-6  rounded-2xl  border-2 border-slate-200  hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                              <div class="rounded-2xl dark:bg-gray-800 dark:text-gray-400 bg-white  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl dark:text-white">Native Notifications</h2>
+                                        <img src="../public/images/notification " class="size-48 rounded-xl " >
+                              </div>
+                          </div>
+                          <div data-aos="fade-up" data-aos-delay="100"  data-aos-duration="1000" class=" motion-preset-bounce motion-duration-300 row-start-3 row-end-6  rounded-2xl b  border-2 border-slate-200  hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                              <div class="rounded-2xl dark:bg-gray-800 dark:text-gray-400 bg-white  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-center  gap-2 p-5">
+                                        <h2 class="font-semibold text-2xl justify-start mb-2 dark:text-white">Auto Updates</h2>
+                                        <p class="text-center text-lg mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex provident fuga quae! Fugit quibusdam consequuntur eos eaque, quaerat cumque explicabo.</p>
+  
+                                        <img src="../public/images/update.jpg " class="size-40 rounded-xl " >
+                              </div>
+                          </div>
+  
+  
+                        </div>
+              </div>
+                 </div>
+
+            <!-- feteuresss .... -->
+
+
+        <div data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="200" id="fetures-line" class=" dark:bg-gray-900 dark:text-white px-6 py-12 max-w-7xl mt-10 mx-auto lg:px-8 lg:mt-4  ">
+            <div class="border dark:bg-gray-800 border-slate-200  items-center justify-center  rounded-lg overflow-hidden shadow-md shadow-gray-500/50"> 
+                <div id="line-4" class="flex gap-8 p-6">
+                    <h3 class="font-semibold text-lg mr-4 whitespace-nowrap">Home</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Messsenger</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Insta</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Phone</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Linked In</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Github</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Youtube</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Arrow</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Docs</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Icons</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Images</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                    <h3 class="font-semibold text-lg mr-4  whitespace-nowrap">Canavas</h3>
+                    <span class="bi bi-arrow-right-short text-2xl font-semibold items-center"></span>
+                </div>
+            </div>
+         </div>
+
+         <!-- customer stories.. -->
+
+     <div class="bg-white dark:bg-gray-900 dark:text-gray-300" id="customer">
+        <div id="c-stories" class="px-6 pt-[85px] pb-12 max-w-7xl mt-10 mx-auto lg:px-8 lg:mt-4">
+            <h2 class="text-5xl sm:font-semibold motion-preset-typewriter-[10] dark:text-white">Customer Stories</h2>
+            <div data-aos="fade-right" data-aos-delay="100" class="  border items-stretch border-slate-200 rounded-lg mt-10 flex flex-col lg:flex-row  bg-white dark:bg-gray-800">
+                     <div class="flex flex-col gap-12 py-8 pl-8 pr-2 lg:w-1/2  "  data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
+                            <div class="flex gap-2">
+                                <span class="bi bi-amd text-3xl text-cyan-500 "></span>  <h2 class="text-2xl font-semibold mr-4">Click Up |</h2>
+                            </div>
+                        <h3 class="text-xl font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, illum aperiam. Cumque?</h3>
+                            <div id="tag-container" class="flex flex-wrap gap-3">
+                                <div class="flex flex-row gap-2 justify-center items-center font-semibold border-2 text-yellow-700 border-yellow-400 bg-yellow-200 rounded-lg p-2">
+                                    <span class="bi bi-caret-right-fill"></span>
+                                    <h2>Chromoless UI</h2>
+                                </div>
+                                <div class="flex flex-row gap-2 justify-center items-center font-semibold border-2 text-yellow-700 border-yellow-400 bg-yellow-200 rounded-lg p-2">
+                                    <span class="bi bi-caret-right-fill"></span>
+                                    <h2>Web images </h2>
+                                </div>
+                                <div class="flex flex-row gap-2 justify-center items-center font-semibold border-2 text-yellow-700 border-yellow-400 bg-yellow-200 rounded-lg p-2">
+                                    <span class="bi bi-caret-right-fill"></span>
+                                    <h2>Task time in menubar</h2>
+                                </div>
+                                <div class="flex flex-row gap-2 justify-center items-center font-semibold border-2 text-yellow-700 border-yellow-400 bg-yellow-200 rounded-lg p-2">
+                                    <span class="bi bi-caret-right-fill"></span>
+                                    <h2>Notification count in the Docs</h2>
+                                </div>  <div class="flex flex-row gap-2 justify-center items-center font-semibold border-2 text-yellow-700 border-yellow-400 bg-yellow-200 rounded-lg p-2">
+                                    <span class="bi bi-caret-right-fill"></span>
+                                    <h2>Global Access Icons..</h2>
+                                </div>
+
+                            </div>
+                            <p class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur <span class="text-black font-semibold">adipisicing elit</span>. Praesentium ducimus voluptatum deleniti. Porro ipsum placeat eum maxime explicabo qui? Distinctio expedita, ea ut eum doloribus error inventore <span class="text-black font-semibold">adipisicing elit</span> pariatur similique libero.</p>
+
+                            <div id="card-iamge" class=" flex flex-row gap-3 ">
+                                <div>
+                                    <img src="../public/images/avatar1.webp" class="size-12 rounded-full ring-4 ring-cyan-500">
+                                </div>
+                                <div class="flex flex-col gap-1 ">
+                                    <h2 class="font-semibold text-xl">Abinash Rout</h2>
+                                    <p class="text-gray-600 font-medium">Founder $ CEO , Shadow</p>
+                                </div>
+                            </div>
+                     </div>
+                     <div  class=" h-full lg:w-1/2 lg:pl-2 ">
+                            
+                                <img src="../public/images/tailwindlogoimg.png" class="h-[650px] w-full object-cover rounded-r-lg" >
+                         
+                     </div>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row mt-10 motion-preset-slide-right motion-duration-2000">
+                <div     data-aos="fade-right" data-aos-delay="100" class="  rounded-2xl bg-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                    <div  data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="  rounded-2xl bg-white dark:bg-gray-800 dark:text-gray-300 hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 flex flex-col items-start  gap-2 p-5">
+                         <div class="flex flex-row gap-2 items-center">
+                            <span class="bi bi-code-slash dark:bg-transparent bg-cyan-500 rounded-full text-2xl p-3"></span>
+                            <h2 class="font-semibold text-3xl">Native AI's</h2>
+
+                         </div>
+                         <p class="font-medium text-lg mt-3 dark:text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo nemo incidunt at autem corrupti obcaecati dignissimos fugiat praesentium numquam?</p>
+                          <div class="flex flex-row mt-4">
+                            <div class=" flex ">
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12" ></div>
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12 -translate-x-7" ></div>
+                            </div>
+                            <div class="flex flex-col gap-1 items-start">
+                                <h2 class="font-semibold text-xl">Shadow</h2>
+                                <p class="text-gray-600">Chat AI</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div     data-aos="fade-right" data-aos-delay="100" class="  rounded-2xl bg-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                    <div  data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="rounded-2xl bg-white dark:bg-gray-800 dark:text-gray-300  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-start  gap-2 p-5">
+                        <div class="flex flex-row gap-2 items-center">
+                            <span class="bi bi- bg-cyan-500 rounded-full text-2xl p-3"></span>
+                            <h2 class="font-semibold text-3xl">Native AI's</h2>
+
+                         </div>
+                         <p class="font-medium text-lg mt-3 dark:text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo nemo incidunt at autem corrupti obcaecati dignissimos fugiat praesentium numquam?</p>
+                          <div class="flex flex-row mt-4">
+                            <div class=" flex ">
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12" ></div>
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12 -translate-x-7" ></div>
+                            </div>
+                            <div class="flex flex-col gap-1 items-start">
+                                <h2 class="font-semibold text-xl">Shadow</h2>
+                                <p class="text-gray-600">Chat AI</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div     data-aos="fade-right" data-aos-delay="100" class="   rounded-2xl bg-slate-200 hover:bg-gradient-to-tr hover:from-pink-500 hover:via-cyan-500 hover:to-violet-500 p-[1px]">
+                    <div  data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="rounded-2xl dark:bg-gray-800 dark:text-gray-300  bg-white  hover:bg-gradient-to-tr hover:from-pink-500/50 hover:via-cyan-500/50 hover:to-violet-500/50 w-full h-full flex flex-col items-start  gap-2 p-5">
+                        <div class="flex flex-row gap-2 items-center">
+                            <span class="bi bi-code-slash bg-cyan-500 rounded-full text-2xl p-3"></span>
+                            <h2 class="font-semibold text-3xl">Native AI's</h2>
+
+                         </div>
+                         <p class="font-medium text-lg mt-3 dark:text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo nemo incidunt at autem corrupti obcaecati dignissimos fugiat praesentium numquam?</p>
+                          <div class="flex flex-row mt-4">
+                            <div class=" flex ">
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12" ></div>
+                                <div><img src="../public/images/avatar1.webp" class="rounded-full size-12 -translate-x-7" ></div>
+                            </div>
+                            <div class="flex flex-col gap-1 items-start">
+                                <h2 class="font-semibold text-xl">Shadow</h2>
+                                <p class="text-gray-600">Chat AI</p>
+                            </div>
+                          </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div   data-aos="fade-right" data-aos-delay="200"class="bg-black dark:bg-gray-800 dark:border-2 dark:border-slate-300 rounded-lg mt-10 flex flex-col lg:flex-row items-end ">
+                <div class="flex flex-col gap-12 p-8 lg:flex-1 " data-aos="fade-right" data-aos-delay="100">
+                       <p class="text-gray-600 font-semibold text-lg" >READY TO START BUILDING|</p>
+                   <h2 class="text-5xl text-white font-medium mt-3 ">create Your Desktop app free *</h2>
+                      <p class="text-start text-gray-600 font-lg font-medium mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ea, quis officia provident sint ut dolores porro similique molestias dolorem eaque. Asperiores a at possimus!</p>
+                                
+                      <button class="text-white font-semibold text-md bg-blue-700 px-5 py-2 rounded-lg"><span class="bi bi-download mr-5 font-semibold text-xl"></span>Download Desktop To Windows 11</button>
+                       
+
+                      <p class="text-sm text-white font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, enim hic atque iste praesentium ex laborum earum eveniet illum amet ea itaque? Accusantium quidem dolorum nisi culpa dolores!</p>
+
+                      
+                </div>
+                <div  class=" h-full lg:w-[40%]  ">
+                       
+                           <img src="../public/images/moniter.jpg" class=" h-[650px] w-full object-cover rounded-r-lg"  >
+                       
+                </div>
+           </div>
+    </div>
+     </div>
+
+    <!-- Your Needs... -->
+
+    <div id="need-section" class="px-6 pt-[85px] pb-12 max-w-7xl mt-10 mx-auto lg:px-8 lg:mt-4 bg-white dark:bg-gray-900 dark:text-gray-500  " >
+
+        
+  
+                  <h2 class="text-5xl sm:font-semibold mt-5 motion-preset-typewriter-[10] dark:text-white">Your Needs|</h2>
+                  <div class="flex flex-col gap-10 lg:flex-row mt-10">
+                  
+                        <div     data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="flex-1    dark:bg-gray-800 dark:text-gray-500    shadow-lg shadow-black/50  rounded-2xl bg-cyan-50/50 flex flex-col items-center md:items-start border border-slate-300   gap-2 p-5  ">
+                         
+                                <h2 class="font-semibold text-4xl dark:text-white">Free</h2>
+    
+                             
+                             <p class="font-medium text-lg mt-3 text-wrap mb-6">Lorem ipsum dolor sit <br>amet consectetur adipisicing elit.<br> Aspernatur illo nemo incidunt at autem </p>
+                              <div class="flex flex-col gap-4 mt-4">
+                                <div class="">
+                                          <p class="uppercase text-lg font-semibold dark:text-white">Key Fetures</p>
+                                </div>
+                                <div class="flex flex-col gap-3 items-start">
+                                  <ul>
+                                    <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                                    <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                                    <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                                    <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                                  </ul>
+                                </div>
+
+                              </div>
+                              <button class=  "dark:text-white text-blue-700 mt-5 text-md font-semibold border border-black rounded-lg px-5 py-2 items-center text-center w-full justify-center flex">Read Docs</button>
+                        </div>
+                        <div     data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="flex-1    dark:bg-gray-800 dark:text-gray-500    rounded-2xl shadow-lg shadow-black/50   bg-cyan-50/50 flex flex-col items-center md:items-start border border-slate-300  gap-2 p-5 ">
+                         
+                            <h2 class="font-semibold text-4xl dark:text-white">Essential</h2>
+    
+                         
+                            <p class="font-medium text-lg mt-3 text-wrap mb-3">For simple Desktop App's| </p>
+                            <h2 class="text-2xl font-semibold  mb-7 dark:text-white">$99<span class="text-lg font-medium">/month</span></h2>
+                          <div class="flex flex-col gap-4 mt-4">
+                            <div class="">
+                                      <p class="uppercase text-lg font-semibold dark:text-white">Key Fetures</p>
+                            </div>
+                            <div class="flex flex-col gap-3 items-start">
+                              <ul>
+                                <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                                <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                                <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                                <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                              </ul>
+                            </div>
+                           
+                          </div>
+                          <button class="text-white bg-blue-700 mt-5 text-md font-semibold border border-black rounded-lg px-5 py-2 items-center text-center w-full justify-center flex">Read Docs</button>
+                        </div>
+                        <div     data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="flex-1    dark:bg-gray-800 dark:text-gray-500    rounded-2xl shadow-lg shadow-black/50   bg-cyan-50/50 flex flex-col items-center md:items-start border border-slate-300  gap-2 p-5 ">
+                         
+                        <h2 class="font-semibold text-4xl dark:text-white">Proffesional</h2>
+
+                     
+                        <p class="font-medium text-lg mt-3 text-wrap mb-3">For simple Desktop App's| </p>
+                        <h2 class="text-2xl font-semibold  mb-7 dark:text-white">$99<span class="text-lg font-medium">/month</span></h2>
+                      <div class="flex flex-col gap-4 mt-4">
+                        <div class="">
+                                  <p class="uppercase text-lg font-semibold dark:text-white">Key Fetures</p>
+                        </div>
+                        <div class="flex flex-col gap-3 items-start">
+                          <ul>
+                            <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                            <li><span class="mr-3 bi bi-check"></span>Free for persona use|</li>
+                            <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                            <li><span class="mr-3 bi bi-x"></span>Free for persona use|</li>
+                          </ul>
+                        </div>
+                       
+                      </div>
+                      <button class="text-white bg-blue-700 mt-5 text-md font-semibold border border-black rounded-lg px-5 py-2 items-center text-center w-full justify-center flex">Read Docs</button>
+                        </div>
+                        
+                  </div>
+
+
+
+   
+
+    </div>
+
+<!-- 
+    questions... -->
+    <div id="questions" class="px-6 pt-[85px] pb-12 max-w-7xl mt-10 mx-auto lg:px-8 lg:mt-4 dark:bg-gray-900" >
+                       <h2 class="text-5xl sm:font-semibold mt-5 motion-preset-typewriter-[10] dark:text-white">Faq's|</h2>
+
+                       <div class="grid grid-cols-1 gap-6 mt-6 lg:grid-cols-2">
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50 hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer " aria-controls="faq-1">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-1">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50  hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer" aria-controls="faq-2">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-2">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50  hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer" aria-controls="faq-3">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-3">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50  hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer" aria-controls="faq-4">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-4">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50  hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer" aria-controls="faq-5">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-5">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+                        <div       data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" class="group border border-slate-200 rounded-lg px-5 py-2 dark:bg-gray-800 dark:text-white bg-cyan-50/50 shadow-md shadow-black/50  hover:bg-black/5">
+                            <dt class="flex justify-between items-center cursor-pointer" aria-controls="faq-6">
+                                <p class="font-semibold text-xl">Is Desktop For Me</p>
+                                <i class="bi bi-chevron-up text-xl font-black -rotate-180 transition-transform"></i>
+                            </dt>
+                            <dd class="mt-3 hidden" id="faq-6">
+                                <p class="text-md font-medium dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellat hic impedit ipsam necessitatibus consequatur.</p>
+
+                            </dd>
+                        </div>
+
+
+                       </div>
+
+    </div>
+
+    <!-- _----------------back to top buttton__________________
+   -->
+    <div class="flex justify-end items-end pr-5 animate-bounce2q">
+     <a href="#" class="bg-cyan-500 rounded-full p-3  text-black  "><span class="bi bi-arrow-up text-2xl"></span></a>
+    </div>
+
+
+
+
+
+        </main>
+
+        <!-- fotter start..... -->
+
+        <footer class="mt-10 bg-white dark:bg-gray-900 dark:text-gray-400">
+            <div class="flex flex-col     ">
+                <!-- subfotter... -->
+                  <div data-aos="flip-up" data-aos-duration="1000" data-aos-once="true" class="flex flex-col md:flex-row items-center mt-5  px-20 py-7 justify-between  dark:bg-gray-800 dark:text-gray-200 bg-cyan-500/50  ">
+                     <div class="flex flex-col gap-1 items-center motion-preset-oscillate motion-preset-stretch  ">
+                         <p class="text-lg font-medium">SUBSCRIBE TO OUR</p>
+                         <h2 class="text-2xl font-semibold">ICONCANVA'S</h2>
+                     </div>
+
+                     <div class="flex p-5 justify-center items-center  ">
+                          <div class="flex flex-row border border-slate-200 rounded-full bg-white px-12 md:px-24 py-2">
+                          <input type="text" placeholder=" EnterYour Email Address" class="mr-6 text-sm focus:outline-2 focus:outline-cyan-500 focus:rounded-full px-10 py-2" class="w-[700px]">
+                            <div class="">
+                                <p class="text-white rounded-full bg-green-400 px-3 py-1 ">SUBMIT </p>
+                              </div>
+                          </div>
+
+                     </div>
+                  
+
+             
+                  </div>
+
+                 <!-- main fotter.... -->
+
+                <div id="main-footer" class="flex flex-col sm:flex-row justify-between items-center p-20 bg-cyan-900 dark:bg-black dark:text-gray-400  text-white">
+
+                                  <!-- left section.... -->
+                    <div class="flex flex-col gap-12 md:flex-row mt-5 ">
+                       
+                        <div class="flex flex-col gap-3 justify-center items-center">
+                              <div>
+                                <h2 class="text-2xl font-semibold dark:text-white"  >Information</h2>
+                              </div>
+                              <div class="flex flex-col gap-1">
+                                <ul>
+                                    <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Chat category</li>
+                                    <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Data</li>
+                                    <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Pricing</li>
+                                    <!-- <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Contact Us</li>
+                                    <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Support</li> -->
+                                </ul>
+                              </div>
+
+                        </div>
+                        <div class="flex flex-col gap-3 justify-center items-center">
+                            <div>
+                              <h2 class="text-2xl font-semibold dark:text-white">Application</h2>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                              <ul>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2 "></span>Download</li>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2 "></span>Previous</li>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>How to Used</li>
+                                
+                              </ul>
+                            </div>
+
+                        </div>
+                        <div class="flex flex-col gap-3 justify-center items-center">
+                            <div class="flex items-start">
+                              <h2 class="text-2xl font-semibold dark:text-white ">API</h2>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                              <ul>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Download</li>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>Previous</li>
+                                  <li class="text-md font-medium mb-2"><span class="bi bi-bank mr-2"></span>How to Used</li>
+                                
+                              </ul>
+                            </div>
+
+                        </div>
+
+  
+                    </div>
+
+                    <!-- right section.... -->
+
+                    <div class="flex flex-col mt-5">
+                           
+                        <div class="flex flex-col gap-4 justify-center items-center">
+                            
+                            <div><h2 class="text-3xl font-semibold dark:text-white">Documentation</h2></div>
+                            <div class="flex flex-row gap-4 text-2xl dark:text-white">
+                                <span class="bi bi-linkedin"></span>
+                                <span class="bi bi-github"></span>
+                                <span class="bi bi-youtube"></span>
+                            </div>
+                            <div class="text-5xl">
+                                <a href="#" id="logo"  class="flex gap-2 items-center  ">
+                                    <span class="bi bi-browser-chrome"></span>
+                                    <span class="text-2xl font-semibold dark:text-white">WebImages</span>
+                                 </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                 </div>
+
+
+            </div> 
+
+ 
+            <div class="flex flex-col justify-center items-center gap-1 p-7 dark:text-white">
+            <div class="text-[12px] font-medium flex gap-2">
+              <span class="bi bi-back text-red-500"></span>
+              <p>A Y Combinator Company</p>
+            </div>
+            <h2 class="text-[15px] font-semibold">&copy; 2025 Desktop, INC. All Rights Reserved |</h2>
+          </div>
+          
+        </footer>
+       
+           
+
+
+    <script src="./website.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+ 
+    
+  });
+</script>
+<script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const htmlEl = document.documentElement;
+
+    toggleBtn.addEventListener("click", () => {
+      const isDark = htmlEl.classList.toggle("dark");
+      themeIcon.classList.toggle("bi-brightness-high", !isDark);
+      themeIcon.classList.toggle("bi-moon", isDark);
+    });
+  </script>
+</body>
+</html>
